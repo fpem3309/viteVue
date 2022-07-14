@@ -8,15 +8,20 @@ const store = createStore({
         }
     },
     mutations: {
-
+        setMore(state, data) {
+            state.more = data
+        }
     },
     actions: {
         getData() {
             axios.get('https://api.unsplash.com/photos/random', {
-                client_id: 'v0F7ccr-QO5x8jlZ2fKf8OqAYbCMjFOjUWRTyRRpwSM',
-                count: 30
+                params: {
+                    client_id: 'LMocYADsnYRNA7-0pBbIZ8f2MqK7ArTnN7Bx1RXNzK4',
+                    count: 30
+                }
             }).then((a) => {
                 console.log(a.data);
+                this.commit('setMore', a.data)
             })
         }
 
