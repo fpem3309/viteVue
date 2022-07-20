@@ -12,6 +12,7 @@
 
   <div id="area2">
     <Board/>
+    <KakaoTalk/>
   </div>
   </div>
 
@@ -21,10 +22,12 @@
 
 <script>
 import Board from './components/Board.vue'
+import KakaoTalk from './components/KakaoTalk.vue'
 export default {
   components :{
-    Board
-  }
+    Board,
+    KakaoTalk
+}
 
 }
 </script>
