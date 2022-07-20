@@ -5,6 +5,8 @@
   <b-button @click="signWhithKakao" class="mt-2" variant="warning" style=" width:100%">
     <b-icon-chat-fill class="mr-2" />카카오톡 로그인
   </b-button>
+
+  <button @click="signWhithKakao">gd</button>
 </template>
 
 <script>

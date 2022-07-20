@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import kakaoLogin from '../components/kakaoLogin.vue'
+import kakaoLogin from './../components/KakaoLogin.vue'
 Vue.use(Router)
 
 export default new Router({
