@@ -2,14 +2,14 @@
 <div>
   <div id="area">
     <button @click="$store.dispatch('getData')">버튼</button>
+
     <div v-for="(a,i) in $store.state.more" :key="i">
       <img :src="`${$store.state.more[i].urls.small_s3}`">
     </div>
 
-<input @input="searchWord" type="search" placeholder="프랍 검색" >
-<button @click="test"> test </button>
-    </div>
-
+    <input @input="searchWord" type="search" placeholder="프랍 검색" >
+    <button @click="test"> test </button>
+  </div>
 
   <div id="area2">
     <Board/>
@@ -18,13 +18,10 @@
 
 
   <div  v-for="(item,index) in findElement" :key="index">
-  {{item.url}}
+    {{item.url}}
    </div>
 
-  </div>
-
-
-
+</div>
 </template>
 
 <script>
