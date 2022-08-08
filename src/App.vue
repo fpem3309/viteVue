@@ -2,8 +2,6 @@
 <div>
   <div id="area">
     <button @click="$store.dispatch('getData')">버튼</button>
-    <button @click="$store.dispatch('getData')">버튼</button>
-    <button @click="$store.dispatch('getData')">버튼</button>
     <div v-for="(a,i) in $store.state.more" :key="i">
       <img :src="`${$store.state.more[i].urls.small_s3}`">
     </div>
