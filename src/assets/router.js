@@ -1,19 +1,19 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import kakaoLogin from './../components/KakaoLogin.vue'
-Vue.use(Router)
+import { createRouter, createWebHistory } from 'vue-router'
+import List from './../components/List.vue'
 
-export default new Router({
-    routes: [
-        {
-            path: '/',
-            name: 'App',
-            component: App
-        },
-        {
-            path: "/kakaoLogin",
-            name: "kakaoLogin",
-            component: kakaoLogin,
-        }
-    ]
-})
+
+const routes = [
+    {
+        path: "/list",
+        name: "List",
+        component: List,
+    }
+]
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
+});
+
+
+export default router;
